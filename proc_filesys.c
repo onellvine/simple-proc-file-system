@@ -44,7 +44,7 @@ static ssize_t read_fn(struct file *file, char __user *ubuf, size_t count, loff_
             int swap = 0;
             int wss = 1688;
             char *elapsed = "00:00:05";
-            len += sprintf(buff, "[PID:%d] - [RSS: %dKB] - [SWAP:%d] - [WSS=%d] - [ELAPSED TIME=%s]\n"
+            len += sprintf(buff, "[PID:%d] - [RSS: %dKB] - [SWAP:%dKB] - [WSS=%dKB] - [ELAPSED TIME=%s]\n"
                     , pid, rss, swap, wss, elapsed);
         }
     }
